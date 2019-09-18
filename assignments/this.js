@@ -3,8 +3,8 @@
 *
 * 1. Window/Global binding occurs by default if none othe other cases apply to the 'this' keyword. 
 * 2. Implicit Binding is when a function is ivoked and there is a dot to the left of it, what is in front of that dot gives the context of what 'this' is.
-* 3. Explicit Binding is when you are stating that 'this' points to a specific value bu using call, apply, or bind.
-* 4. New Binding is when the 'new' keyword is used to create a new object; in these cases 'this' points specifically to it.
+* 3. New Binding is when the 'new' keyword is used to create a new object; in these cases 'this' points specifically to it.
+* 4. Explicit Binding is when you are stating that 'this' points to a specific value bu using call, apply, or bind.
 *
 * write out a code example of each explanation above
 */
@@ -61,7 +61,7 @@ function Throne(heir){
 }
 
 Throne.prototype.claim = function(){
-    return `I am ${this.newName} of House ${this.newHouse} and I am the rightful ruler of the seven Kingdoms!`;
+    return `I am ${this.name} of House ${this.house} and I am the rightful ruler of the seven Kingdoms!`;
 }
 
 const motherOfDragons = new Throne ({
